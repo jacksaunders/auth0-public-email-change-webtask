@@ -7,8 +7,8 @@ The Auth0 Management API only you to change a user's email address from your bac
 ```
 npm i -g wt-cli
 wt init
-wt create https://raw.githubusercontent.com/sandrinodimattia/auth0-public-email-change-webtask/master/task.js \
-    --name change-email \
+wt create https://raw.githubusercontent.com/jacksaunders/auth0-public-email-change-webtask/master/task.js \
+    --name auth0-change-email \
     --secret AUTH0_API_TOKEN="YOUR_API2_TOKEN" \
     --secret AUTH0_CONNECTION="NAME_OF_THE_DB_CONNECTION" \
     --secret AUTH0_DOMAIN="YOUR_AUTH0_DOMAIN" \
