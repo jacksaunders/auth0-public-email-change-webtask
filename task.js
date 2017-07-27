@@ -51,7 +51,7 @@ module.exports = function(context, req, res) {
       audience: context.secrets.AUTH0_CLIENT_ID,
       algorithms: ["RS256"],
       issuer: `https://${context.secrets.AUTH0_DOMAIN}/`,
-      secret: jwksRsa.expressJwtSecret({
+      secret: jwksClient.expressJwtSecret({
         cache: true,
         rateLimit: true,
         jwksRequestsPerMinute: 5,
